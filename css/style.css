@@ -5,6 +5,10 @@
 html{
     box-sizing: border-box;
 }
+strong{
+
+    color: rgb(236, 123, 123);
+}
 
 body{
     background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
@@ -13,23 +17,20 @@ body{
     line-height: 1.5;
     text-align: center;
 }
-h3{
-    text-align: center;
-    font-size: 2.5em;
-    font-family: 'Nanum Myeongjo', serif;
-}
 p{
     font-size: 4rem;
     text-align: center;
-}
+} 
+/* welcome  */
 
 .landing-area{
     width: 100vw;
     height: 100vh;
 }
+
 .bg-image {
     position: absolute;
-    background:  url(/img/background.jpg);
+    background:  url(/img/back.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -40,7 +41,7 @@ p{
     opacity: 0.4;
 }
 .landing-content{
-    color: white;
+    color: rgb(250, 238, 238);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -64,66 +65,88 @@ p{
     margin: 2rem 0 0;
     border-radius: 3em;
     text-decoration: none;
-    color: white;
+    color: rgb(250, 238, 238);
     transition: background 500ms ease;
     }
 .welcome-button:hover{
         color: #fff;
-        background-color:  #6495ed; 
+        background-color:   rgb(236, 123, 123);
         text-decoration: none;
     }
 
     /* navbar  */
     .navbar{
-        background-color:  #6495ed ;
+        background-color:  #569ee0 ;
         position: sticky;
         top: 0;
         left: 0;
         width: 100%;
-        padding: 1rem;    
+        padding: 1rem;   
+        margin-bottom: auto; 
     }
+
     .navbar-header .navbar-brand{
-        font-size: 2em;
+        font-size: 3.5rem;
         font-style: italic;
         position: relative;
         left: 4em;
         right: 0;
         color: rgb(58, 47, 47);
     }
-    li{
-        font-size: 1em;
-        font-style: italic;
-        position: relative;
-        padding-inline-end: 5em;
-        left: -2.5em;
-        right: 0;
-        color: rgb(58, 47, 47);
-
+    .navbar-header .navbar-brand:hover{
+        color: inherit;
+    }
+    
+    .navbar-default .navbar-nav>li>a {
+        color:  #36363696; 
+        font-size: 2rem;
+    }
+    .navbar-default .navbar-nav>li>a:hover{
+        color:  inherit; 
     }
     /* about  */
+    .about-part{
+        text-align: center;
+        padding: 2.5em 1.3em;
+        background: rgb(245, 235, 235);
+        color: rgb(24, 22, 22);
+    }
+   
+    .header{
+        max-width: 40rem;
+        margin: 0 auto 1.5rem auto;
+        padding-top: 1.6em;
+        font-size: 3rem;
+        align-items: center;
+        align-self: center;
+    }
     .about-inner-part{
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        justify-content: space-evenly;
+        display: grid;
+        grid-template-columns: 33em 1fr;
+        align-items: center;
+        grid-gap: 3em;
         grid-gap: 0.5em;
         margin: 3.75em;
+        padding: 3em 0.5em;
+        align-content: center;
 
      }
      .about-image{
          padding-bottom: 1.25em;
      }
      .about-image> img{
-         width: 25em;
-         height: 28em;
-         border: 1px solid green;
+         width: 30em;
+         height: 32em;
          border-radius: 50%;
+         align-content: center;
      }
-     .about-info> p{
-         line-height: 2rem;
+     .about-info>p{
+         line-height: 1.3em;
          margin: 0 3rem;
          padding: 0 20px;
          font-size: 1.5em;
+         text-align: justify;
+         align-self: center;
      }
 
      
@@ -134,11 +157,7 @@ p{
         padding: 2.5em 1.3em;
         background: #6495ed;
     }
-    .projects-header{
-        max-width: 40rem;
-        margin: 0 auto 6rem auto;
-        border-bottom: 1px solid black;
-    }
+   
     @media(max-width: 23em){
         .projects-header{
             font-size: 4rem;
@@ -152,27 +171,32 @@ p{
         max-width: 80rem;
         margin: 0 auto;
         margin-bottom: 6rem;
+        box-shadow: 30px 0px 40px rgba(0,0,0,0.1),
+        -30px 0px 40px rgba(0,0,0,0.1);
+        
+
     }
     .project{
         background: cyan;
         box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
         border-radius: 8px;
     }
-    .code{
-        color: gray;
+    /* .code{
+        color: rgb(245, 235, 235);
         transition:  color 0.3px ease-out;
     }
     .project:hover .code{
         color: darkblue;
-    }
+    } */
     .project-image{
         height: calc(100%-6.8rem);
         width: 100%;
         object-fit: cover;
     }
     .project-title{
-        font-size: 1.25em;
+        font-size: 2em;
         padding: 1.25em 0.6em; 
+        text-decoration: none;
     }
 
     /* contact  */
@@ -195,6 +219,7 @@ p{
     .contact-links{
         display: flex;
         justify-content: center;
+        align-items: center;
         width: 100%;
         max-width: 62rem;
         margin-top: 4rem;
@@ -209,48 +234,42 @@ p{
         transform: translateY(10px);
     }
 
-    /* footer 
-    footer{
-        font-weight: 400;
-        text-align: center;
-        padding: 1rem;
-        background: coral;
-
-    } */
     /* media queries  */
-    @media(max-width: 1090px){
+    @media(max-width: 62em){
         li{
             padding-inline-end: 30px;
         }
-    }
-    @media(max-width: 774px){   
+        .about-inner-part{
+            display: flex;
+            flex-direction: inherit;
+        }  
+        
             .navbar-header .navbar-brand{
-               
-                position: relative;
-                left: 1.8em;
-                right: 0;
-                color: rgb(58, 47, 47);
-            }
-            .contact-links{
-                display: flex;
-                justify-content: center;
-                width: 100%;
-                max-width: 780px;
-                margin-top: 4rem;
-                flex-wrap: nowrap;
+                left: 2rem;
             }
     }
-  @media(max-width: 550px){
-    .contact-links{
-        flex-direction: column;
+
+    @media(max-width: 59em){
+        .about-inner-part{
+            display: flex;
+            flex-direction: column;
+        }
     }
-    .contact-details{
-        font-size: 1.8rem;
+ @media(max-width: 35em){     
+    .navbar-header .navbar-brand{
+        display: none;
     }
+    .contact-paragraph>p{
+        font-size: 3rem;
+    }
+ }
+ @media(max-width: 30em){
+   .contact-links{
+       flex-direction: column-reverse;
    }
-   @media(max-width: 490){
-
+   .about-image> img{
+    width: 20rem;
+    height: 22rem;
    }
-    
-
-
+  
+ }
