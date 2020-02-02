@@ -1,3 +1,4 @@
+// introduction animation
 var TxtRotate = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -55,3 +56,13 @@ var TxtRotate = function(el, toRotate, period) {
     document.body.appendChild(css);
   };
   
+  // HUMBERGER 
+
+//   function myFunction() {
+//     var myNavbar = document.getElementById("navbar");
+//     if (myNavbar.className === "topnav") {
+//         myNavbar.className += " responsive";
+//     } else {
+//         myNavbar.className = "topnav";
+//     }
+// }
