@@ -100,6 +100,7 @@ p{
     .navbar-default .navbar-nav>li>a {
         color:  #36363696; 
         font-size: 2rem;
+        font-family: 'Libre Baskerville', serif;
     }
     .navbar-default .navbar-nav>li>a:hover{
         color:  inherit; 
@@ -119,6 +120,7 @@ p{
         font-size: 3rem;
         align-items: center;
         align-self: center;
+        font-family: 'Libre Baskerville', serif;
     }
     .about-inner-part{
         display: grid;
@@ -155,7 +157,7 @@ p{
     .projects-part{
         text-align: center;
         padding: 2.5em 1.3em;
-        background: #6495ed;
+        background: #5b78c7;
     }
    
     @media(max-width: 23em){
@@ -256,7 +258,8 @@ p{
             flex-direction: column;
         }
     }
- @media(max-width: 35em){     
+ @media(max-width: 35em){  
+
     .navbar-header .navbar-brand{
         display: none;
     }
