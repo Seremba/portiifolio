@@ -181,13 +181,7 @@ p{
         box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
         border-radius: 8px;
     }
-    /* .code{
-        color: rgb(245, 235, 235);
-        transition:  color 0.3px ease-out;
-    }
-    .project:hover .code{
-        color: darkblue;
-    } */
+   
     .project-image{
         height: calc(100%-6.8rem);
         width: 100%;
@@ -198,7 +192,13 @@ p{
         padding: 1.25em 0.6em; 
         text-decoration: none;
     }
-    
+    .back-to-top{
+        font-size: 3.2em;
+        color: #fff;
+        align-content: center;
+        align-self: center;
+        align-items: center;
+    }
 
     /* contact  */
     .contact-area{
