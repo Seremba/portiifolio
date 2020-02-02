@@ -30,7 +30,7 @@ p{
 
 .bg-image {
     position: absolute;
-    background:  url(/img/back.jpg);
+    background:  url(../img/back.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -198,6 +198,7 @@ p{
         padding: 1.25em 0.6em; 
         text-decoration: none;
     }
+    
 
     /* contact  */
     .contact-area{
