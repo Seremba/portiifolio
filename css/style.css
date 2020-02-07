@@ -146,11 +146,11 @@ p{
          align-content: center;
      }
      .about-info>p{
-         line-height: 1.3em;
+         line-height: 1.8em;
          margin: 0 3rem;
          padding: 0 20px;
          font-size: 1.5em;
-         text-align: justify;
+         text-align: initial;
          align-self: center;
      }
 
