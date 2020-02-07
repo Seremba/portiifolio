@@ -255,11 +255,7 @@ p{
         li{
             padding-inline-end: 30px;
         }
-        .about-inner-part{
-            display: flex;
-            flex-direction: inherit;
-        }  
-        
+       
             .navbar-header .navbar-brand{
                 left: 2rem;
             }
@@ -267,8 +263,13 @@ p{
 
     @media(max-width: 59em){
         .about-inner-part{
-            display: flex;
-            flex-direction: column;
+            display: inline;
+            text-align: justify;
+            align-self: center;
+            justify-content: center;
+        }
+        .about-image{
+            padding-left: 100px;
         }
     }
     @media(max-width: 35em){  
