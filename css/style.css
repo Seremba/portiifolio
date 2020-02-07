@@ -270,6 +270,7 @@ p{
         }
         .about-image{
             padding-left: 80px;
+            padding-right: 20px;
         }
     }
     @media(max-width: 35em){  
