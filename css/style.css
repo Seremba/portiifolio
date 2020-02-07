@@ -269,7 +269,7 @@ p{
             justify-content: center;
         }
         .about-image{
-            padding-left: 100px;
+            padding-left: 80px;
         }
     }
     @media(max-width: 35em){  
