@@ -20,7 +20,7 @@ body{
     margin: 0;
 }
 p{
-     /* font-size: 4rem; */
+     font-size: 4rem;
     text-align: center; 
 }  
 
@@ -121,8 +121,8 @@ p{
         margin: 0 auto 1.5rem auto;
         padding-top: 1.6em;
         font-size: 3rem;
-        align-items: center;
-        align-self: center;
+        align-items: justify;
+        /* align-self: center; */
         font-family: 'Libre Baskerville', serif;
     }
     .about-inner-part{
